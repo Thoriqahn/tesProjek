@@ -2,7 +2,7 @@
 
 Data teknikal harian saham BEI.
 
-GitHub Actions menjalankan `screener.py` setiap hari bursa pukul 16:40 WIB (17:40 WITA), setelah penutupan. Hasilnya di-commit ke folder `data/`:
+GitHub Actions menjalankan `screener.py` setiap hari bursa pukul 16:20 WIB (17:20 WITA), setelah penutupan. Field `final` bernilai false bila data diambil sebelum 16:15 WIB (masih intraday). Hasilnya di-commit ke folder `data/`:
 
 | File | Isi |
 |---|---|

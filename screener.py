@@ -118,6 +118,9 @@ def susun(hasil: dict[str, dict], ihsg: dict | None, sekarang: datetime) -> dict
         "tanggal_data": tanggal_data,
         "dibuat": sekarang.isoformat(),
         "segar": tanggal_data == sekarang.strftime("%Y-%m-%d"),
+        # final = diambil setelah penutupan (16:15 WIB). Sebelum itu data masih intraday.
+        "final": tanggal_data != sekarang.strftime("%Y-%m-%d")
+                 or (sekarang.hour, sekarang.minute) >= (16, 15),
         "ihsg": ihsg,
         "jumlah": {"universe": len(hasil), "diperdagangkan": len(hari_ini), "likuid": len(likuid)},
         "kriteria": {

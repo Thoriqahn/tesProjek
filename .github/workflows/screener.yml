@@ -2,8 +2,9 @@ name: Screener harian BEI
 
 on:
   schedule:
-    # 09:40 UTC = 16:40 WIB = 17:40 WITA, Senin-Jumat (setelah penutupan bursa)
-    - cron: "40 9 * * 1-5"
+    # 09:20 UTC = 16:20 WIB = 17:20 WITA, Senin-Jumat (setelah penutupan bursa).
+    # Jadwal GitHub bisa terlambat 10-30 menit; laporan sore jalan 18:00 WITA.
+    - cron: "20 9 * * 1-5"
   workflow_dispatch: {}
 
 permissions:
