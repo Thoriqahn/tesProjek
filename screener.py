@@ -1,4 +1,4 @@
-"""Radar Saham BEI - screener teknikal harian.
+"""Screener teknikal harian saham BEI.
 
 Dijalankan oleh GitHub Actions setiap hari bursa setelah penutupan.
 Menarik data harian semua saham di tickers.txt dari Yahoo Finance (kode.JK),

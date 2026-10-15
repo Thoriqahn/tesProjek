@@ -1,6 +1,6 @@
-# radar-saham-data
+# tesProjek
 
-Data teknikal harian saham BEI untuk Radar Saham BEI.
+Data teknikal harian saham BEI.
 
 GitHub Actions menjalankan `screener.py` setiap hari bursa pukul 16:40 WIB (17:40 WITA), setelah penutupan. Hasilnya di-commit ke folder `data/`:
 
